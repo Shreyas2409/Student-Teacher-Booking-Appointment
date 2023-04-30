@@ -1,5 +1,5 @@
 import { Grid, Col } from 'rsuite';
-import { Container, Header, Content, Footer, } from 'rsuite'
+import { Header, Content, Footer, } from 'rsuite'
 import AppointmentForm from './AppointmentForm';
 import AppointmentList from './AppointmentList';
 import Dashboard from './TDashboard';
