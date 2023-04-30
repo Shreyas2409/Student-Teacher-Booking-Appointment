@@ -3,7 +3,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link,  useNavigate } from "react-router-dom";
 import {
     auth,
-    registerWithEmailAndPassword1,
+    registerWithEmailAndPassword2,
     signInWithGoogle,
 } from "../Firebase.js";
 import "./SRegister.css";
@@ -16,7 +16,7 @@ function Register() {
     const navigate =  useNavigate();
     const register = () => {
         if (!name) alert("Please enter name");
-        registerWithEmailAndPassword1(name, email, password);
+        registerWithEmailAndPassword2(name, email, password);
     };
     useEffect(() => {
         if (loading) return;
