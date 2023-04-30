@@ -24,13 +24,13 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBLfZA_eiTesY8xYsC7ZwWdXOcdxuuN7Eo",
-  authDomain: "booming-primer-320518.firebaseapp.com",
-  databaseURL: "https://booming-primer-320518-default-rtdb.firebaseio.com",
-  projectId: "booming-primer-320518",
-  storageBucket: "booming-primer-320518.appspot.com",
-  messagingSenderId: "753786491996",
-  appId: "1:753786491996:web:1489fb9d6e557cbcbc8299"
+  apiKey: " ",
+  authDomain: " ",
+  databaseURL: " ",
+  projectId: " ",
+  storageBucket: " ",
+  messagingSenderId: " ",
+  appId: " "
 };
 
 // Initialize Firebase
