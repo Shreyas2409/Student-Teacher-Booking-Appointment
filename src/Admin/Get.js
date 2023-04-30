@@ -21,10 +21,11 @@ useEffect(() => {
 
 return (
   <div>
+    <h1>Teacher Data</h1>
     {data &&
       Object.entries(data).map(([key, value]) => (
         <div key={key}>
-          <h2>{value.name}</h2>
+          <p>{value.name}</p>
           <p>{value.department}</p>
           <p>{value.subject}</p>
         </div>

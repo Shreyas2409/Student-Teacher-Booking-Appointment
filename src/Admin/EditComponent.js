@@ -3,6 +3,7 @@ import { rb } from "../Firebase";
 import { set, ref } from "firebase/database";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import './EditComponent.css';
 
 function EditComponent({ id, name, department, subject, onHide }) {
   const [editedName, setEditedName] = useState(name);
@@ -32,8 +33,10 @@ function EditComponent({ id, name, department, subject, onHide }) {
   };
 
   return (
+    <div>
+    <h1>Update</h1>
     <Form onSubmit={handleSubmit}>
-      <Form.Group className="mb-3">
+      <Form.Group className="form-group">
         <Form.Label>Name</Form.Label>
         <Form.Control
           type="text"
@@ -42,7 +45,7 @@ function EditComponent({ id, name, department, subject, onHide }) {
           onChange={handleNameChange}
         />
       </Form.Group>
-      <Form.Group className="mb-3">
+      <Form.Group className="form-group">
         <Form.Label>Department</Form.Label>
         <Form.Control
           type="text"
@@ -51,7 +54,7 @@ function EditComponent({ id, name, department, subject, onHide }) {
           onChange={handleDepartmentChange}
         />
       </Form.Group>
-      <Form.Group className="mb-3">
+      <Form.Group className="form-group">
         <Form.Label>Subject</Form.Label>
         <Form.Control
           type="text"
@@ -64,6 +67,7 @@ function EditComponent({ id, name, department, subject, onHide }) {
         Save Changes
       </Button>
     </Form>
+    </div>
   );
 }
 

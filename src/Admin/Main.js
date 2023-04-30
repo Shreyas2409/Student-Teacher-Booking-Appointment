@@ -27,7 +27,8 @@ function Main() {
   }
 
   return (
-    <div className="App" style={{marginTop : 250}}>
+    <div style={{marginTop : 250}}>
+      <h1>Add</h1>
       <Card>
         <Card.Body>
           <center>

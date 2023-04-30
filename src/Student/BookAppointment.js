@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { rb } from "../Firebase";
 import {  ref, set } from "firebase/database";
 import { Form, Button } from "react-bootstrap";
+import './BookAppointment.css';
 
 function BookAppointment() {
     const [name, setName] = useState("");
@@ -28,7 +29,7 @@ function BookAppointment() {
     return (
         <div style={{ marginTop: 250 }}>
             <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="form-group" controlId="formBasicEmail">
                     <Form.Label>Name </Form.Label>
                     <Form.Control
                         type="text"
@@ -37,7 +38,7 @@ function BookAppointment() {
                         onChange={(e) => setName(e.target.value)}
                     />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="form-group" controlId="formBasicEmail">
                     <Form.Label>Department </Form.Label>
                     <Form.Control
                         type="text"
@@ -46,7 +47,7 @@ function BookAppointment() {
                         onChange={(e) => setDepartment(e.target.value)}
                     />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="form-group" controlId="formBasicEmail">
                     <Form.Label>Date</Form.Label>
                     <Form.Control
                         type="date"

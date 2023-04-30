@@ -4,15 +4,18 @@ import './WelcomePage.css'; // import the CSS file for styling
 function WelcomePage() {
     return (
         <div className="welcome-page">
-            <h1>Welcome to My Website!</h1>
+            <h1>Student-Teacher Booking Appointment</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                efficitur, nulla eu imperdiet blandit, nisi ex malesuada ipsum, vel
-                interdum mauris dolor et velit. Suspendisse nec magna condimentum,
-                dignissim lacus ac, vestibulum lorem. Aliquam at arcu vel libero
-                faucibus ornare ac a mauris.
+                Booking appointment systems, either online or through traditional queueing systems, are
+                now popular. Several businesses, such as scheduling an appointment, employ various
+                Web-based appointment systems for their patients, which improve the efficiency of the
+                appointment process, reducing patient wait times and increasing the total number of
+                patients treated. This research proposes a web-based appointment booking system that
+                allows students and lecturers to be aware of their appointment time regardless of where
+                they are by using the web or mobile devices. By connecting to the Internet, students and
+                instructors can easily access the system. It also permits students to send any message,
+                including the appointment's purpose and timing.
             </p>
-            <button>Get Started</button>
         </div>
     );
 }
