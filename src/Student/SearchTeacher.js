@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { dbref } from "../Firebase";
+import { rb } from "../Firebase";
 import { getDatabase, ref, child, get } from "firebase/database";
 import { Form, Button, Table } from "react-bootstrap";
 
@@ -10,7 +10,7 @@ function SearchTeacher() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const db = getDatabase(dbref);
+        const db = getDatabase(rb);
         const teacherRef = ref(db, "teachers");
         const departmentRef = child(teacherRef, department);
         const snapshot = await get(departmentRef);
