@@ -34,9 +34,4 @@ Whether online or via traditional queueing methods, booking appointment systems 
 - **Firebase Account:**  
   Create a Firebase account and set up your project configuration.
 
-### Installation
 
-1. **Clone the Repository:**  
-   Start by cloning the project to your local machine:
-   ```bash
-   git clone https://github.com/Shreyas2409/Student-Teacher-Booking-Appointment.git
